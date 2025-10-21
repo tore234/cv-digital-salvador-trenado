@@ -1,0 +1,162 @@
+/* ============================================
+   Estilos globales — CV Digital | Salvador Trenado
+   Versión mejorada para PDF 100% estable
+   ============================================ */
+
+/* Tipografía base */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Tailwind Layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----- Base global ----- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans antialiased bg-zinc-100 text-zinc-900;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ----- Selección de texto ----- */
+::selection {
+  background-color: #6d28d9;
+  color: #ffffff;
+}
+
+/* ----- Botones ----- */
+button {
+  transition: all 0.25s ease;
+  transform-origin: center;
+}
+button:hover {
+  transform: scale(1.04);
+}
+button:active {
+  transform: scale(0.98);
+}
+
+/* ----- Imágenes con transición suave ----- */
+img {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ----- Sombras suaves ----- */
+.shadow-elevated {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================================
+   🔧 RESPONSIVIDAD + FORMATO CARTA FIJO PARA PDF
+   ========================================================= */
+.cv-container {
+  width: 8.5in;              /* Formato carta exacto */
+  height: 11in;
+  background-color: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Escala proporcional en pantallas pequeñas */
+@media screen and (max-width: 1024px) {
+  .cv-container {
+    width: 100%;
+    height: auto;
+    max-width: 850px;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+}
+
+/* Vista móvil: solo muestra una parte (scroll o descarga) */
+@media screen and (max-width: 640px) {
+  .cv-container {
+    transform: scale(0.9);
+    transform-origin: top center;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+}
+
+/* =========================================================
+   🖨️ IMPRESIÓN Y EXPORTACIÓN PDF PERFECTA
+   ========================================================= */
+@media print {
+  @page {
+    size: Letter;
+    margin: 0;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    overflow: visible !important;
+  }
+
+  /* Mantiene la estructura fija en una hoja */
+  .cv-container {
+    width: 8.5in !important;
+    height: 11in !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    page-break-after: avoid !important;
+    box-shadow: none !important;
+  }
+
+  /* Evita saltos internos */
+  section, article, header, footer, main, aside {
+    page-break-inside: avoid !important;
+  }
+
+  /* Elimina sombras, bordes o efectos decorativos */
+  .shadow,
+  .shadow-md,
+  .shadow-lg,
+  .ring,
+  .ring-1,
+  .ring-2,
+  .ring-\[3px\],
+  .ring-violet-300 {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Oculta elementos no imprimibles */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Imágenes sin efectos */
+  img {
+    box-shadow: none !important;
+    transform: none !important;
+  }
+
+  /* Colores de texto legibles */
+  h1, h2, h3, p, li {
+    color: #000000 !important;
+  }
+
+  /* Panel lateral oscuro (mantiene contraste) */
+  aside {
+    background: #111111 !important;
+    color: #ffffff !important;
+  }
+}
