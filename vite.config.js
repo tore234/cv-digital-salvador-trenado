@@ -18,6 +18,6 @@ export default defineConfig({
   },
   server: {
     open: true, // abre el navegador automáticamente
-    port: 5173, // puerto estándar de Vite
+    port: 5174, // puerto estándar de Vite
   },
 });
