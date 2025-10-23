@@ -94,9 +94,9 @@ const CV = () => {
                 </div>
               </div>
             </section>
-          </div>
-
-          {/* QR */}
+            <br />
+            <br />
+            {/* QR */}
           <div className="flex flex-col items-center mt-6">
             <img
               src={qr}
@@ -107,10 +107,13 @@ const CV = () => {
               https://portafolio-react-sth.vercel.app/contacto
             </p>
           </div>
+          </div>
+
+          
         </aside>
 
         {/* === PANEL PRINCIPAL === */}
-        <main className="col-span-2 p-8 space-y-8 text-gray-800">
+        <main className="col-span-2 p-8 space-y-6 text-gray-800">
           {/* ACERCA DE MÍ */}
           <section>
             <h2 className="text-sm font-semibold text-violet-700 mb-2 border-b border-gray-200 pb-1">
@@ -146,6 +149,7 @@ const CV = () => {
                     SETEC Maravatío
                   </a>
                 </p>
+                
                 <ul className="list-disc pl-5 text-sm mt-1 space-y-1">
                   <li>Diseño responsivo e integración de formularios dinámicos.</li>
                   <li>Configuración de dominio, SSL, hosting y despliegue.</li>
@@ -158,19 +162,18 @@ const CV = () => {
                 <p className="text-[11px] text-gray-500">2023–2024</p>
                 <h3 className="font-semibold">Front-End Developer — Proyecto académico</h3>
                 <p className="text-sm italic">
-                  Emonical · PWA de apoyo emocional con AR
+                  Emonical ·  de apoyo emocional con AR
                 </p>
                 <ul className="list-disc pl-5 text-sm mt-1 space-y-1">
                   <li>UI/UX del chatbot y flujo de interacción.</li>
-                  <li>Integración AR con Three.js y ARCore.</li>
-                  <li>Implementación offline mediante service workers.</li>
+                  <li>Integración AR con Three.js .</li>
                 </ul>
-              </article>
+              </article><br />
             </section>
 
             {/* HABILIDADES */}
             <section>
-              <h2 className="text-sm font-semibold text-violet-700 mb-2 border-b border-gray-200 pb-1">
+              <h2 className="text-sm font-semibold text-violet-700 mb-2 border-b border-gray-200 pb-1 ">
                 HABILIDADES TÉCNICAS
               </h2>
               <div className="grid grid-cols-2 gap-x-8 text-sm leading-6">
@@ -191,7 +194,20 @@ const CV = () => {
                   </p>
                 </div>
               </div>
-            </section>
+            </section> <br />
+            
+              {/* HABILIDADES BLANDAS */}
+          <section>
+            <h2 className="text-sm font-semibold text-violet-700 mb-2 border-b border-gray-200 pb-1">
+              HABILIDADES BLANDAS
+            </h2>
+            <ul className="list-disc pl-5 text-sm space-y-1">
+              <li>Adaptabilidad y aprendizaje continuo.</li>
+              <li>Comunicación efectiva y trabajo en equipo.</li>
+              <li>Resolución de problemas con pensamiento crítico.</li>
+              <li>Gestión del tiempo y responsabilidad.</li>
+            </ul>
+          </section><br />
 
             {/* IDIOMAS */}
             <section>
@@ -202,7 +218,7 @@ const CV = () => {
                 <li>Español — Nativo</li>
                 <li>Inglés — Intermedio (lectura técnica y laboral)</li>
               </ul>
-            </section>
+            </section><br />
 
             {/* INTERESES */}
             <section>
@@ -210,8 +226,9 @@ const CV = () => {
                 INTERESES
               </h2>
               <p className="text-sm leading-6">
-                Apasionado por <b>IA aplicada</b>, <b>realidad aumentada</b> y{" "}
-                <b>software accesible</b> que promueva bienestar digital y desarrollo humano.
+               Apasionado por la <b>IA aplicada</b>, la <b>realidad aumentada</b> y el{" "}
+              <b>software accesible</b> que promueva bienestar digital y desarrollo
+              humano. Interesado en proyectos que unan tecnología con impacto social.
               </p>
             </section>
           </div>
