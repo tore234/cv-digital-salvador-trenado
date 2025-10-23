@@ -66,7 +66,9 @@ const CV = () => {
               </h3>
               <ul className="text-sm leading-6 space-y-1 text-gray-200">
                 <li>📞 +52 421 105 9838</li>
-                <li>📍 Tarandacuao, Gto., México</li>
+                <li>📍 Tarandacuao, Gto., México
+                  #38798
+                </li>
                 <li>✉️ trenadohernadezsalvador
                   @gmail.com</li>
                 <li>🐙 github.com/tore234</li>
@@ -88,8 +90,9 @@ const CV = () => {
                 <div>
                   <p className="font-semibold text-white">2022–2024</p>
                   <p>TSU en Desarrollo de Software Multiplataforma</p>
+                   <p className="text-gray-400">UTOM</p>
                   <p className="text-gray-400 italic">
-                    Proyecto: Emonical (chatbot + PWA + módulos AR)
+                    Proyecto: Armony (chatbot  + módulos AR)
                   </p>
                 </div>
               </div>
@@ -226,9 +229,9 @@ const CV = () => {
                 INTERESES
               </h2>
               <p className="text-sm leading-6">
-               Apasionado por la <b>IA aplicada</b>, la <b>realidad aumentada</b> y el{" "}
+               Apasionado por las <b>tecnologías emergentes</b>, el{" "}
               <b>software accesible</b> que promueva bienestar digital y desarrollo
-              humano. Interesado en proyectos que unan tecnología con impacto social.
+              humano. Interesado en proyectos que unan tecnología con <b>impacto social.</b> 
               </p>
             </section>
           </div>
