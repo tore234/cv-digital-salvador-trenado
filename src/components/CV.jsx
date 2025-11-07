@@ -67,7 +67,7 @@ const CV = () => {
               <ul className="text-sm leading-6 space-y-1 text-gray-200">
                 <li>📞 +52 421 105 9838</li>
                 <li>📍 Tarandacuao, Gto., México
-                  #38798
+                  cp#38798
                 </li>
                 <li>✉️ trenadohernadezsalvador
                   @gmail.com</li>
