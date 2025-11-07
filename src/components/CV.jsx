@@ -165,7 +165,7 @@ const CV = () => {
                 <p className="text-[11px] text-gray-500">2023–2024</p>
                 <h3 className="font-semibold">Front-End Developer — Proyecto académico</h3>
                 <p className="text-sm italic">
-                  Emonical ·  de apoyo emocional con AR
+                  Armony ·  de apoyo emocional con AR
                 </p>
                 <ul className="list-disc pl-5 text-sm mt-1 space-y-1">
                   <li>UI/UX del chatbot y flujo de interacción.</li>
