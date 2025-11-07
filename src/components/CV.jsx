@@ -72,7 +72,7 @@ const CV = () => {
                 <li>✉️ trenadohernadezsalvador
                   @gmail.com</li>
                 <li>🐙 github.com/tore234</li>
-                <li>🔗 linkedin.com/in/salvador-trenado-hernández</li>
+                <li>🔗 www.linkedin.com/in/sth10</li>
               </ul>
             </section>
 
