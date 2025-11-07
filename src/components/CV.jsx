@@ -107,7 +107,7 @@ const CV = () => {
               className="w-24 h-24 bg-white p-1 rounded-sm border border-gray-300 object-contain"
             />
             <p className="text-[9px] mt-2 text-gray-400 text-center break-all">
-              https://portafolio-react-sth.vercel.app/contacto
+              https://portafolio-react-sth.vercel.app/
             </p>
           </div>
           </div>
