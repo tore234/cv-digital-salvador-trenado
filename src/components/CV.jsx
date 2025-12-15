@@ -65,7 +65,7 @@ const CV = () => {
                 CONTACTO
               </h3>
               <ul className="text-sm leading-6 space-y-1 text-gray-200">
-                <li>📞 +52 421 105 9838</li>
+                <li>📞 +52 421 105 9836</li>
                 <li>📍 Tarandacuao, Gto., México
                    C.P. 38789
                 </li>
