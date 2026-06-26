@@ -160,3 +160,55 @@ img:hover {
     color: #ffffff !important;
   }
 }
+
+/* =========================================================
+   Tema oscuro / utilidades neon
+   ========================================================= */
+:root {
+  --bg-dark: #05060a;
+  --panel-dark: #071021;
+  --muted: #94a3b8;
+  --neon-violet: #8b5cf6;
+  --neon-cyan: #06b6d4;
+  --card: #0b1220;
+}
+
+.dark-bg {
+  background: linear-gradient(180deg, var(--bg-dark), #071029);
+  color: #e6edf3;
+}
+
+.neon-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  border: 1px solid rgba(139,92,246,0.06);
+}
+
+.neon-btn {
+  background: linear-gradient(90deg, var(--neon-violet), #7c3aed);
+  color: white;
+  box-shadow: 0 10px 30px rgba(124,58,237,0.18), 0 2px 6px rgba(0,0,0,0.45);
+}
+.neon-btn:hover {
+  filter: brightness(1.05);
+}
+
+.ghost-btn {
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.profile-note {
+  background: linear-gradient(180deg, rgba(139,92,246,0.04), rgba(6,182,212,0.02));
+  border-radius: 12px;
+  padding: 1rem;
+  color: #dfe9f2;
+}
+
+@media (max-width: 640px) {
+  .neon-card { padding: 0.8rem; border-radius: 12px; }
+  .neon-btn { padding: 0.6rem 1rem; }
+}
